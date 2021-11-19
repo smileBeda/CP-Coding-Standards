@@ -21,16 +21,24 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="MY_TEXT_DOMAIN"/><!-- change only this value. Add line if more than one text domain. Not suggested.-->
+				<element value="tkt-tree-view"/><!-- change only this value. Add line if more than one text domain. Not suggested.-->
 			</property>
 		</properties>
 	</rule>
 
+	<!-- PHP Version Test. Uncomment to use. Install with https://github.com/PHPCompatibility/PHPCompatibility#installation-via-a-git-check-out-to-an-arbitrary-directory-method-2. -->
+	<!-- <config name="testVersion" value="5.2-"/>
+	<rule ref="PHPCompatibility">
+	    <include-pattern>*\.php$</include-pattern>
+	</rule> -->
+
 	<!-- end config -->
+	<!-- You should probably not edit anything below this line -->
 	<!-- start rules -->
 
 	<!-- We use WordPress ruleset by default which should include everything -->
 	<rule ref="WordPress">
+
 		<!-- Remove WP Specific rules -->
 		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
 		<exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
@@ -133,7 +141,7 @@
 
 	</rule>
 
-	<!-- Do nt check Colon Spaces -->
+	<!-- Do not check Colon Spaces -->
 	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
 		<properties>
 			<property name="space_before_colon" value="optional"/>
