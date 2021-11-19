@@ -21,7 +21,7 @@ It would be better to use the more complete WPCS, and if you follow that, it wil
     - text domain is passed to localisation functions
     - text domain passed in function matches declared domain
 - no styling, formatting or documentation issues should be flagged
-- flags should be silenced
+- flags should not be silenced
 - should not sniff CSS or JS files. Should sniff _only_ PHP Files.
 - should check for a minimum supported _WP_ Version
 - should not be considered a final judgement - instead a human being should evaluate the results and work on a solution with the developer
