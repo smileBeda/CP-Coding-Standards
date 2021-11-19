@@ -21,7 +21,7 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="redirect"/><!-- change only this value. Add line if more than one text domain. Not suggested.-->
+				<element value="MY_TEXT_DOMAIN"/><!-- change only this value. Add line if more than one text domain. Not suggested.-->
 			</property>
 		</properties>
 	</rule>
@@ -54,6 +54,10 @@
 	  	<exclude name="WordPress.Arrays.CommaAfterArrayItem.SpaceAfterComma"/>
 	  	<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound"/>
 	  	<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict"/>
+	  	<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoSpaceAfterComma"/>
+	  	<exclude name="WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion"/>
+	  	<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
+	  	<exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
 
 	  	<!-- Remove Squiz Specific rules -->
 	  	<exclude name="Squiz.Commenting.FileComment.WrongStyle"/>
@@ -84,12 +88,26 @@
 	  	<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceAfterEquals"/>
 	  	<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
 	  	<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
+	  	<exclude name="Squiz.Commenting.FileComment.Missing"/>
+	  	<exclude name="Squiz.Commenting.InlineComment.SpacingBefore"/>
+	  	<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine"/>
+	  	<exclude name="Squiz.Commenting.BlockComment.HasEmptyLineBefore"/>
+	  	<exclude name="Squiz.Commenting.BlockComment.HasEmptyLine"/>
+	  	<exclude name="Squiz.Commenting.DocCommentAlignment.SpaceBeforeStar"/>
+	  	<exclude name="Squiz.Commenting.ClassComment.Missing"/>
+	  	<exclude name="Squiz.Commenting.ClassComment.SpacingAfter"/>
+	  	<exclude name="Squiz.Commenting.VariableComment.Missing"/>
 
 	  	<!-- Remove PEAR Specific rules -->
 	  	<exclude name="PEAR.Commenting.FileComment.WrongStyle"/>
 	  	<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
 		<exclude name="PEAR.Files.IncludingFile.BracketsNotRequired"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColonCASE"/>
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.BreakIndent"/>
 
 		<!-- Remove PSR2 Specific rules -->
 		<exclude name="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed"/>
@@ -108,6 +126,10 @@
 		<exclude name="Generic.WhiteSpace.ArbitraryParenthesesSpacing.SpaceBeforeClose"/>
 		<exclude name="Generic.Files.EndFileNewline.NotFound"/>
 		<exclude name="Generic.Formatting.MultipleStatementAlignment.IncorrectWarning"/>
+		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed"/>
+		<exclude name="Generic.Commenting.DocComment.SpacingBetween"/>
+		<exclude name="Generic.Classes.OpeningBraceSameLine.SpaceBeforeBrace"/>
+		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma"/>
 
 	</rule>
 
