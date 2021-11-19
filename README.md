@@ -16,6 +16,18 @@ It would be better to use the more complete WPCS, and if you follow that, it wil
 
 ---
 
+### PRINCIPLES
+- only security related issues should be flagged with the exception:
+    - text domain is psased to localisation functions
+    - text domain passed in function matches declared domain
+- no styling, formatting or documentation issues should be flagged
+- flags should cannot be silenced
+- should not sniff CSS or JS files. Should sniff _only_ PHP Files.
+- should check for a minimum supported _WP_ Version
+- should not be considered a final judgement - instead a human being should evaluate the results and work on a solution with the developer
+
+---
+
 ### USAGE
 
 1. Install WPCS as outlined [here](https://github.com/WordPress/WordPress-Coding-Standards#installation)
@@ -52,7 +64,7 @@ To change the minimum and manximum supported PHP version, amend the line `<confi
 
 ---
 
-### Contributors
+### CONTRIBUTORS
 
 To contribute, you will need to know the exact rule you want to add or remove so to add it to the XML file.
 
