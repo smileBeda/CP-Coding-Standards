@@ -32,7 +32,8 @@ It would be better to use the more complete WPCS, and if you follow that, it wil
 
 1. Install WPCS as outlined [here](https://github.com/WordPress/WordPress-Coding-Standards#installation)
 2. Download the phpcs.xml file of this repo and put it into the directory you want to analyse
-3. `cd` into that directory and run `phpcs --standard=/path/to/phpcs.xml project-folder-or-file`
+3. Adjust the Text Domain (and if you want, PHP version and minimum WP Version) inside the XML file (you are looking for `minimum_supported_wp_version` and `text_domain` element values)
+4. `cd` into that directory and run `phpcs --standard=/path/to/phpcs.xml project-folder-or-file`
 
 This will produce an error log like this example 
 ```
