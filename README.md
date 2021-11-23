@@ -6,7 +6,7 @@ Proposed ClassicPress coding standards for reviewing plugins/themes, presented a
 
 1. Create a directory dedicated to this project (e.g. `/home/username/cp-plugin-review`)
 2. Change to the directory (`cd /home/username/cp-plugin-review`)
-3. Install WPCS: `composer create-project wp-coding-standards/wpcs --no-dev` ([more info](https://github.com/WordPress/WordPress-Coding-Standards#installation). When prompted with "Do you want to remove the existing VCS history?" type "n" and press Enter. Now, WPCS should be installed into the `wpcs` subdirectory.
+3. Install WPCS v2.3.0: `composer create-project wp-coding-standards/wpcs wpcs 2.3.0 --no-dev --prefer-dist --keep-vcs` ([more info](https://github.com/WordPress/WordPress-Coding-Standards#installation). Now, WPCS should be installed into the `wpcs` subdirectory.
 4. Clone this repository (`git clone https://github.com/TukuToi/CP-Coding-Standards`).
 
 ## Usage
