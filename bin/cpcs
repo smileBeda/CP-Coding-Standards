@@ -4,7 +4,7 @@ set -e # exit on error
 
 if [ -z "$1" ] || [ -z "$CPCS_TEXTDOMAIN" ]; then
 	echo "Usage: CPCS_TEXTDOMAIN=plugin-textdomain $0 plugin-directory-name [other-wpcs-args]"
-	echo "(or use . for current directory)"
+	echo "(to check the current directory, use . for plugin-directory-name)"
 	exit 1
 fi
 
