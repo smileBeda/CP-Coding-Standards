@@ -72,9 +72,9 @@
 		<exclude name="WordPress.CodeAnalysis.AssignmentInCondition.Found"/>
 		<exclude name="WordPress.DB.DirectDatabaseQuery.DirectQuery"/>
 		<exclude name="WordPress.DB.DirectDatabaseQuery.NoCaching"/>
-		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
 		<exclude name="WordPress.PHP.StrictComparisons.LooseComparison"/>
 		<exclude name="WordPress.PHP.StrictInArray.MissingTrueStrict"/>
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
 		<exclude name="WordPress.Security.ValidatedSanitizedInput.InputNotValidated"/>
 		<exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
 	  	<exclude name="WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion"/>
@@ -92,8 +92,8 @@
 	  	<exclude name="Squiz.Commenting.DocCommentAlignment.SpaceBeforeStar"/>
 	  	<exclude name="Squiz.Commenting.FileComment.Missing"/>
 	  	<exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
-	  	<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
 	  	<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
+	  	<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
 	  	<exclude name="Squiz.Commenting.FileComment.WrongStyle"/>
 	  	<exclude name="Squiz.Commenting.FunctionComment.Missing"/>
 	  	<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
@@ -121,11 +121,11 @@
 	  	<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen"/>
 	  	<exclude name="Squiz.Operators.IncrementDecrementUsage.Found"/>
 	  	<exclude name="Squiz.Operators.ValidLogicalOperators.NotAllowed"/>
+	  	<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
 	  	<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found"/>
 	  	<exclude name="Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure"/>
-	  	<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
-	  	<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
 		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
+	  	<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
 
 	  	<!-- Remove PEAR rules in Bulk -->
 	  	<exclude name="PEAR.Commenting"/>
