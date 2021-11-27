@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -e # exit on error
+
+if [ -z "$1" ] || [ -z "$CPCS_TEXTDOMAIN" ]; then
+	echo "Usage: CPCS_TEXTDOMAIN=plugin-textdomain $0 plugin-directory-name [other-wpcs-args]"
+	echo "(to check the current directory, use . for plugin-directory-name)"
+	exit 1
+fi
+
+# wpcs needs an absolute path for installed_paths.
+WPCS_DIR="$(cd "$(dirname "$0")"; cd ../..; echo "$(pwd)/wpcs")"
+
+if [ ! -d "$WPCS_DIR" ] || [ ! -x "$WPCS_DIR/vendor/bin/phpcs" ]; then
+	echo "Please install WPCS into $WPCS_DIR :"
+	echo "https://github.com/WordPress/WordPress-Coding-Standards#installation"
+	exit 1
+fi
+
+"$WPCS_DIR/vendor/bin/phpcs" \
+	--runtime-set text_domain "$CPCS_TEXTDOMAIN" \
+	--runtime-set installed_paths "$WPCS_DIR" \
+	--standard="$(dirname "$0")/../phpcs.xml" \
+	-s -v "$@"
