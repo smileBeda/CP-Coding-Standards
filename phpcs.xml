@@ -6,7 +6,7 @@
 	</description>
 
 	<!-- start config -->
-	
+
 	<!-- style the error output a little so it is easier to spot warning/errors-->
 	<arg name="colors"/>
 
@@ -32,7 +32,7 @@
 	<!-- PHP Version Test. Uncomment to use. Install with https://github.com/PHPCompatibility/PHPCompatibility#installation-via-a-git-check-out-to-an-arbitrary-directory-method-2. -->
 	<!-- <config name="testVersion" value="5.2-"/>
 	<rule ref="PHPCompatibility">
-	    <include-pattern>*\.php$</include-pattern>
+		<include-pattern>*\.php$</include-pattern>
 	</rule> -->
 
 	<!-- end config -->
@@ -52,10 +52,10 @@
 		<!-- These rules are already excluded with above bulk rule-exclusions
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
 		<exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
-	  	<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
-	  	<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
-	  	<exclude name="WordPress.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed"/>
-	  	<exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter"/>
+		<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"/>
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+		<exclude name="WordPress.WhiteSpace.DisallowInlineTabs.NonIndentTabsUsed"/>
+		<exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter"/>
 		<exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceBefore"/>
 		<exclude name="WordPress.WhiteSpace.PrecisionAlignment.Found"/>
 		-->
@@ -66,8 +66,8 @@
 		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoSpaceBeforeArrayCloser"/>
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys"/>
 		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoSpaceAfterComma"/>
-	  	<exclude name="WordPress.Arrays.CommaAfterArrayItem.SpaceAfterComma"/>
-	  	<exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned"/>
+		<exclude name="WordPress.Arrays.CommaAfterArrayItem.SpaceAfterComma"/>
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned"/>
 		<exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis"/>
 		<exclude name="WordPress.CodeAnalysis.AssignmentInCondition.Found"/>
 		<exclude name="WordPress.DB.DirectDatabaseQuery.DirectQuery"/>
@@ -77,72 +77,72 @@
 		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
 		<exclude name="WordPress.Security.ValidatedSanitizedInput.InputNotValidated"/>
 		<exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
-	  	<exclude name="WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion"/>
+		<exclude name="WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion"/>
 
-	  	<!-- Remove Squiz rules in Bulk -->
-	  	<exclude name="Squiz.Commenting"/>
-	  	<exclude name="Squiz.NamingConventions"/>
-	  	<exclude name="Squiz.WhiteSpace"/>
+		<!-- Remove Squiz rules in Bulk -->
+		<exclude name="Squiz.Commenting"/>
+		<exclude name="Squiz.NamingConventions"/>
+		<exclude name="Squiz.WhiteSpace"/>
 
-	  	<!-- These rules are already excluded with above more generic rule-exclusions
-	  	<exclude name="Squiz.Commenting.BlockComment.HasEmptyLine"/>
-	  	<exclude name="Squiz.Commenting.BlockComment.HasEmptyLineBefore"/>
-	  	<exclude name="Squiz.Commenting.ClassComment.Missing"/>
-	  	<exclude name="Squiz.Commenting.ClassComment.SpacingAfter"/>
-	  	<exclude name="Squiz.Commenting.DocCommentAlignment.SpaceBeforeStar"/>
-	  	<exclude name="Squiz.Commenting.FileComment.Missing"/>
-	  	<exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
-	  	<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
-	  	<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
-	  	<exclude name="Squiz.Commenting.FileComment.WrongStyle"/>
-	  	<exclude name="Squiz.Commenting.FunctionComment.Missing"/>
-	  	<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
-	  	<exclude name="Squiz.Commenting.FunctionComment.MissingParamTag"/>
-	  	<exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
-	  	<exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
-	  	<exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
-	  	<exclude name="Squiz.Commenting.InlineComment.SpacingBefore"/>
-	  	<exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
-	  	<exclude name="Squiz.Commenting.VariableComment.Missing"/> 
-	  	<exclude name="Squiz.Commenting.VariableComment.MissingVar"/>
-	  	<exclude name="Squiz.Commenting.VariableComment.WrongStyle"/>
-	  	<exclude name="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
-	  	<exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
-	  	<exclude name="Squiz.WhiteSpace.FunctionSpacing.AfterLast"/>
-	  	<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine"/>
-	  	-->
+		<!-- These rules are already excluded with above more generic rule-exclusions
+		<exclude name="Squiz.Commenting.BlockComment.HasEmptyLine"/>
+		<exclude name="Squiz.Commenting.BlockComment.HasEmptyLineBefore"/>
+		<exclude name="Squiz.Commenting.ClassComment.Missing"/>
+		<exclude name="Squiz.Commenting.ClassComment.SpacingAfter"/>
+		<exclude name="Squiz.Commenting.DocCommentAlignment.SpaceBeforeStar"/>
+		<exclude name="Squiz.Commenting.FileComment.Missing"/>
+		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag"/>
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
+		<exclude name="Squiz.Commenting.FileComment.WrongStyle"/>
+		<exclude name="Squiz.Commenting.FunctionComment.Missing"/>
+		<exclude name="Squiz.Commenting.FunctionComment.MissingParamComment"/>
+		<exclude name="Squiz.Commenting.FunctionComment.MissingParamTag"/>
+		<exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+		<exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
+		<exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+		<exclude name="Squiz.Commenting.InlineComment.SpacingBefore"/>
+		<exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
+		<exclude name="Squiz.Commenting.VariableComment.Missing"/>
+		<exclude name="Squiz.Commenting.VariableComment.MissingVar"/>
+		<exclude name="Squiz.Commenting.VariableComment.WrongStyle"/>
+		<exclude name="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
+		<exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
+		<exclude name="Squiz.WhiteSpace.FunctionSpacing.AfterLast"/>
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine"/>
+		-->
 
-	  	<!-- Remove Squiz Specific rules -->
-	  	<exclude name="Squiz.Arrays.ArrayBracketSpacing.SpaceBeforeBracket"/>
-	  	<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
-	  	<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
-	  	<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceAfterEquals"/>
-	  	<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeEquals"/>
-	  	<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen"/>
-	  	<exclude name="Squiz.Operators.IncrementDecrementUsage.Found"/>
-	  	<exclude name="Squiz.Operators.ValidLogicalOperators.NotAllowed"/>
-	  	<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
-	  	<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found"/>
-	  	<exclude name="Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure"/>
+		<!-- Remove Squiz Specific rules -->
+		<exclude name="Squiz.Arrays.ArrayBracketSpacing.SpaceBeforeBracket"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+		<exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+		<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceAfterEquals"/>
+		<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeEquals"/>
+		<exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen"/>
+		<exclude name="Squiz.Operators.IncrementDecrementUsage.Found"/>
+		<exclude name="Squiz.Operators.ValidLogicalOperators.NotAllowed"/>
+		<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
+		<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found"/>
+		<exclude name="Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure"/>
 		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
-	  	<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
+		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
 
-	  	<!-- Remove PEAR rules in Bulk -->
-	  	<exclude name="PEAR.Commenting"/>
-	  	<exclude name="PEAR.Functions.FunctionCallSignature"/>
+		<!-- Remove PEAR rules in Bulk -->
+		<exclude name="PEAR.Commenting"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature"/>
 
-	  	<!-- These rules are already excluded with above more generic rule-exclusions
-	  	<exclude name="PEAR.Commenting.FileComment.WrongStyle"/>
-	  	<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
-		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+		<!-- These rules are already excluded with above more generic rule-exclusions
+		<exclude name="PEAR.Commenting.FileComment.WrongStyle"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
 		-->
 
 		<!-- Remove PEAR Specific rules -->
 		<exclude name="PEAR.Files.IncludingFile.BracketsNotRequired"/>
-		<exclude name="PSR2.ControlStructures.SwitchDeclaration.BreakIndent"/> 
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.BreakIndent"/>
 		<exclude name="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColonCASE"/>
 
 		<!-- Remove PSR2 Specific rules -->
@@ -154,22 +154,22 @@
 		<exclude name="Generic.Formatting"/>
 		<exclude name="Generic.WhiteSpace"/>
 
-	  	<!-- These rules are already excluded with above more generic rule-exclusions
-	  	<exclude name="Generic.Commenting.DocComment.SpacingBetween"/>
-	  	<exclude name="Generic.Files.EndFileNewline.NotFound"/>
+		<!-- These rules are already excluded with above more generic rule-exclusions
+		<exclude name="Generic.Commenting.DocComment.SpacingBetween"/>
+		<exclude name="Generic.Files.EndFileNewline.NotFound"/>
 		<exclude name="Generic.Files.EndFileNoNewline.Found"/>
-		<exclude name="Generic.Files.LineEndings.InvalidEOLChar"/> 
+		<exclude name="Generic.Files.LineEndings.InvalidEOLChar"/>
 		<exclude name="Generic.Formatting.MultipleStatementAlignment.IncorrectWarning"/>
 		<exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning"/>
 		<exclude name="Generic.Formatting.SpaceAfterCast.NoSpace"/>
-	  	<exclude name="Generic.WhiteSpace.ArbitraryParenthesesSpacing.SpaceAfterOpen"/>
+		<exclude name="Generic.WhiteSpace.ArbitraryParenthesesSpacing.SpaceAfterOpen"/>
 		<exclude name="Generic.WhiteSpace.ArbitraryParenthesesSpacing.SpaceBeforeClose"/>
 		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed"/>
 		<exclude name="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
 		-->
 
 		<!-- Remove Generic Specific rules -->
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/> 
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax.Found"/>
 		<exclude name="Generic.Classes.OpeningBraceSameLine.SpaceBeforeBrace"/>
 		<exclude name="Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma"/>
 		<exclude name="Generic.PHP.ClosingPHPTag.NotFound"/>
@@ -183,7 +183,7 @@
 			<property name="space_before_colon" value="optional"/>
 		</properties>
 	</rule>
-	
+
 	<!-- Do not check for translator comments when placeholder is included -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
